@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html x-ng-app="">
+<head>
+	<title>Project 1: Tic Tac Toe Game</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body x-ng-controller="TTTController">
+	<div id="container">
+		<h1>Tic Tac Toe</h1>
+
+		<div class="row" x-ng-repeat="r in rows">
+			<div x-ng-repeat="c in r track by $index" x-ng-click="makeMove($parent.$index, $index)" >
+				{{c}}
+ 			</div>
+ 		</div>
+ 		<br>
+
+ 		<p></p>
+ 		 <p x-ng-bind="playerTurn"></p>
+ 		<button ng-click="newGame">START</button>
+<!--  		<img src="img/Start_button_(GBA).png"> -->
+ 		<p x-ng-bind="playerTurn">
+ 		</p>
+	</div>
+</body>
+</html>

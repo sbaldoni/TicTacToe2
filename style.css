@@ -1,0 +1,26 @@
+#container {
+	text-align: center;
+	width: 318px;
+	margin: 0 auto;
+}
+
+#container div div {
+	float:left;
+	border:3px solid black; 
+	width:100px; height:100px; 
+	background-color: white; 
+	color: black; 
+	font-size:90px;
+
+}
+.row {
+	clear:both;
+}
+
+img {
+	width: 100px;
+}
+
+p {
+	font-size: 20px;
+}
